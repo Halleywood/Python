@@ -9,12 +9,14 @@ for x in range (5,1001,5):
 #Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, 
 #print "Coding" instead. If divisible by 10, print "Coding Dojo".
 for x in range(1,21): 
-    if x % 5==0:
-        print(x)
-        print("Coding")
-    if x % 10==0:
+     if x % 10==0:
         print(x)
         print("CodingDojo")
+    elif x % 5==0:
+        print(x)
+        print("Coding")
+    else:
+        print(x)
 #Add odd integers from 0 to 500,000, and print the final sum.
 sum=0
 for x in range(1,500001,2):
@@ -31,6 +33,6 @@ for x in range(2018,0,-4):
 lowNum=5
 highNum=50
 mult=6
-for x in range(5,50):
+for x in range(lowNum,highNum+1):
     if x % mult==0:
         print(x)
